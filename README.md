@@ -1,0 +1,1 @@
+# plottcore-wp-config
