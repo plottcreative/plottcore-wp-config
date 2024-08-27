@@ -1,9 +1,9 @@
 <?php
 
-	namespace PlottCore\WPConfig;
+	namespace PlottConfig\WPConfig;
 
-	use PlottCore\WPConfig\Exceptions\ConstantAlreadyDefinedException;
-	use PlottCore\WPConfig\Exceptions\UndefinedConfigKeyException;
+	use PlottConfig\WPConfig\Exceptions\ConstantAlreadyDefinedException;
+	use PlottConfig\WPConfig\Exceptions\UndefinedConfigKeyException;
 
 /**
  * Class Config

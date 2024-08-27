@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "PlottCore\\WPConfig\\": "src"
+            "PlottConfig\\WPConfig\\": "src"
         }
     },
     "require": {
