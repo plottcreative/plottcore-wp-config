@@ -1,8 +1,8 @@
 <?php
 
-namespace Plott\PlottcoreWpConfig\Exceptions;
+	namespace PlottCore\WPConfig\Exceptions;
 
 class UndefinedConfigKeyException extends \RuntimeException
 {
-  
+
 }

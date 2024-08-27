@@ -1,6 +1,6 @@
 <?php
 
-namespace Plott\PlottcoreWpConfig\Exceptions;
+namespace PlottCore\WPConfig\Exceptions;
 
 /**
  * Class ConstantAlreadyDefinedException
