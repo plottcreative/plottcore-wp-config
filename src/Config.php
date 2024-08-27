@@ -2,8 +2,8 @@
 
 namespace Plott\PlottcoreWpConfig;
 
-use Roots\WPConfig\Exceptions\ConstantAlreadyDefinedException;
-use Roots\WPConfig\Exceptions\UndefinedConfigKeyException;
+use Plott\PlottcoreWpConfig\Exceptions\ConstantAlreadyDefinedException;
+use Plott\PlottcoreWpConfig\Exceptions\UndefinedConfigKeyException;
 
 /**
  * Class Config
@@ -37,10 +37,10 @@ class Config
             $class = self::class;
             throw new UndefinedConfigKeyException("'$key' has not been defined. Use `$class::define('$key', ...)`.");
         }
-        
+
         return self::$configMap[$key];
     }
-    
+
     /**
      * @param string $key
      */
@@ -93,7 +93,7 @@ class Config
             defined($key) or define($key, $value);
         }
     }
-    
+
     /**
      * @param string $key
      * @return bool
@@ -105,7 +105,7 @@ class Config
             $message = "Aborted trying to redefine constant '$key'. `define('$key', ...)` has already been occurred elsewhere.";
             throw new ConstantAlreadyDefinedException($message);
         }
-        
+
         return false;
     }
 }
